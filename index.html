@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Masjid An-Nuur Kotagede</title>
+    
+    <!-- Menggunakan Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Menggunakan FontAwesome untuk Ikon Sosial Media & Titik Tiga -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Menggunakan Font Inter yang mirip dengan Linktree */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b2c21; /* Warna hijau gelap sesuai gambar */
+        }
+        
+        /* Styling khusus untuk tombol tautan */
+        .btn-link {
+            background-color: #eef5e6; /* Warna hijau sangat muda/putih gading */
+            color: #0b2c21; /* Teks warna hijau gelap */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        /* Efek saat tombol disentuh/diarahkan kursor */
+        .btn-link:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex justify-center">
+
+    <!-- Container Utama (Dibatasi lebarnya agar terlihat seperti di HP) -->
+    <main class="w-full max-w-[480px] p-6 flex flex-col items-center mt-4">
+
+        <!-- Tombol Aksi di Atas (Bagikan & Pengaturan) -->
+        <div class="w-full flex justify-between px-2 mb-4 text-gray-300">
+            <button class="bg-[#1b3a2f] p-2 rounded-full h-10 w-10 flex items-center justify-center hover:bg-[#254a3e]">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <button class="bg-[#1b3a2f] p-2 rounded-full h-10 w-10 flex items-center justify-center hover:bg-[#254a3e]">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+        </div>
+
+        <!-- Bagian Profil (Ganti URL gambar di bagian src="") -->
+        <img src="https://via.placeholder.com/150/ffffff/000000?text=Logo+Masjid" 
+             alt="Logo Masjid An-Nuur" 
+             class="w-24 h-24 rounded-full border border-gray-600 object-cover mb-4">
+        
+        <h1 class="text-lg md:text-xl font-semibold text-center mb-2">Info Masjid An-Nuur Kotagede</h1>
+        
+        <!-- Deskripsi Bio -->
+        <p class="text-sm text-center text-gray-200 mb-6 px-4 leading-relaxed">
+            Media Resmi Masjid An-Nuur Kotagede. 📍 Jl. Pelemsari 105, Prenggan, Kotagede, Yogyakarta.<br>
+            Simak informasi dakwah & kajian rutin di sini!
+        </p>
+
+        <!-- Ikon Sosial Media -->
+        <div class="flex gap-6 mb-8 text-2xl">
+            <a href="#" class="hover:text-gray-400 transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-400 transition-colors" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="hover:text-gray-400 transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <!-- Daftar Tombol Tautan -->
+        <div class="w-full flex flex-col gap-4">
+            
+            <a href="#" class="btn-link relative w-full p-4 rounded-[28px] text-center font-medium text-sm flex items-center justify-center min-h-[60px]">
+                <span class="px-8">Saldo Kas Takmir</span>
+                <i class="fa-solid fa-ellipsis-vertical absolute right-6 text-gray-500"></i>
+            </a>
+
+            <a href="#" class="btn-link relative w-full p-4 rounded-[28px] text-center font-medium text-sm flex items-center justify-center min-h-[60px]">
+                <span class="px-8">Informasi Kajian Sabtu Pagi Ba'da Subuh - Setiap Awal Bulan</span>
+                <i class="fa-solid fa-ellipsis-vertical absolute right-6 text-gray-500"></i>
+            </a>
+
+            <a href="#" class="btn-link relative w-full p-4 rounded-[28px] text-center font-medium text-sm flex items-center justify-center min-h-[60px]">
+                <span class="px-8">Jadwal Penceramah Pengajian Malam Sabtu Pahing</span>
+                <i class="fa-solid fa-ellipsis-vertical absolute right-6 text-gray-500"></i>
+            </a>
+
+            <a href="#" class="btn-link relative w-full p-4 rounded-[28px] text-center font-medium text-sm flex items-center justify-center min-h-[60px]">
+                <span class="px-8">Jadwal Khatib & Imam Sholat Jum'at</span>
+                <i class="fa-solid fa-ellipsis-vertical absolute right-6 text-gray-500"></i>
+            </a>
+
+        </div>
+
+    </main>
+</body>
+</html>
